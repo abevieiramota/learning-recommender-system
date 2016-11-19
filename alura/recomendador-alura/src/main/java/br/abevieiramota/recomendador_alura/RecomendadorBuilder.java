@@ -11,7 +11,7 @@ import org.apache.mahout.cf.taste.recommender.Recommender;
 import org.apache.mahout.cf.taste.recommender.UserBasedRecommender;
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 
-public class RecomendadorDeProdutosBuilder implements RecommenderBuilder {
+public class RecomendadorBuilder implements RecommenderBuilder {
 
 	@Override
 	public Recommender buildRecommender(DataModel model) throws TasteException {

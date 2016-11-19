@@ -20,7 +20,7 @@ public class Avaliador {
 		RandomUtils.useTestSeed();
 		
 		RecommenderEvaluator evaluator = new AverageAbsoluteDifferenceRecommenderEvaluator();
-		RecommenderBuilder builder = new RecomendadorDeProdutosBuilder();
+		RecommenderBuilder builder = new RecomendadorBuilder();
 		double erro = evaluator.evaluate(builder, null, model, 0.9, 1.0);
 		System.out.println(erro);
 	}
