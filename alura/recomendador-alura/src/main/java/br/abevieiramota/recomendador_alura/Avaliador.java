@@ -14,7 +14,7 @@ import org.apache.mahout.common.RandomUtils;
 public class Avaliador {
 
 	public static void main(String[] args) throws TasteException, IOException {
-		File file = new File("dados.csv");
+		File file = new File("src/main/resources/dados.csv");
 		DataModel model = new FileDataModel(file);
 		
 		RandomUtils.useTestSeed();

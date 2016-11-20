@@ -16,7 +16,7 @@ import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 
 public class RecomendaProdutos {
 	public static void main(String[] args) throws IOException, TasteException {
-		File file = new File("dados.csv");
+		File file = new File("src/main/resources/dados.csv");
 		DataModel model = new FileDataModel(file);
 
 		UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
